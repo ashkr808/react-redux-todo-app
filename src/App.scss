@@ -1,0 +1,155 @@
+body{
+  background-color: #eee;
+  padding: 20px;
+}
+
+.container{
+  max-width: 600px;
+  background-color: #fff;
+  margin:  30px auto;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .header{
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .overlay{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6));
+      .day-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        color: #fff;
+        padding: 20px 30px;
+        h1{
+          font-weight: 200;
+        }
+      }
+    }
+    
+  }
+}
+
+.body{
+  padding: 30px;
+  margin-bottom: auto;
+}
+
+.add-todo-form{
+  display: flex;
+  border-bottom: 2px solid #adadad;
+  transition-duration: .3s;
+  input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+  }
+  button{
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+    color: #288cde;
+    cursor: pointer;
+  }
+}
+.add-todo-form:focus-within {
+  border-color: #288cde;
+}
+
+.todos{
+  margin-top: 30px;
+}
+.todo{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid #96d0ff;
+  input[type=checkbox]{
+    transform: scale(1.4);
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .check-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      font-size: 14px;
+      line-height: 25px;
+      margin-right: 25px;
+      color: #565656;
+    }
+    p[completed=true]{
+      text-decoration: line-through;
+      color: #288cde;
+    }
+  }
+  i{
+    height: fit-content;
+    font-size: 20px;
+    color:  #288cde;
+    cursor: pointer;
+  }
+}
+.caught-up{
+  margin-top: 80px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer{
+  background-color: #288cde;
+  margin-top: auto;
+  padding: 15px 30px ;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link{
+  text-align: center;
+  color: #233223;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  margin: 50px 0;
+}
+
+
+.about-us{
+  padding: 30px;
+  display: block;
+  text-align: center;
+  min-height: fit-content !important;
+  h1{
+    font-weight: 200;
+  }
+  p{
+    margin-top: 20px;
+    color: #999;
+  }
+  a{
+    margin-top: 60px;
+    display: block;
+    color: #288cde;
+    text-decoration: none;
+  }
+}
+
+
+
